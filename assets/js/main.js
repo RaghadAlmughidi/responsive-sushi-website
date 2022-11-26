@@ -35,7 +35,13 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SHOW SCROLL UP ===============*/
-
+const scrollUp = () => {
+    const scrollup = document.getElementById('scroll-up');
+    //when the scrollup higher than 350 viewport =>add scrollup class eith the scollup
+    this.scrollY >= 350 ? scrollup.classList.add('show-scroll') :
+        scrollup.classList.remove('show-scroll');
+}
+window.addEventListener('scroll', scrollUp)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
